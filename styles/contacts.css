@@ -9,23 +9,23 @@
     font-weight: 700;
 }
 
-.contacts-button {
+.button-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 320px;
     height: 42px;
-    margin: 75px 0 30px;
+    margin: 75px auto 30px;
+    font-size: 24px;
+    font-weight: 500;
     background-color: var(--color-main-black);
+    color: var(--bg-main);
     border: none;
     border-radius: 21px;
 }
 
-.contacts-button:hover {
+.button-link:hover {
     opacity: .8;
-}
-
-.button-link {
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--bg-main);
 }
 
 .socials {
@@ -66,4 +66,16 @@
     .contacts-info {
         font-size: 14px;
     }
+}
+
+@media (max-width: 400px) { 
+    .button-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 500;
+}
 }
